@@ -1,4 +1,4 @@
-# Sales Tax Calculator
+# Subscribe Tech Test
 
 This is a Ruby-based project that calculates sales taxes for a set of shopping baskets based on predefined tax rules. 
 The project follows **SOLID principles** and uses **composition** to handle multiple tax calculators.
