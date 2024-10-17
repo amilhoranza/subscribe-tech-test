@@ -27,8 +27,7 @@ input_3 = <<~INPUT
   3 imported boxes of chocolates at 11.25
 INPUT
 
-exemption_service = ExemptionService.new(['book', 'chocolate', 'pill'])
-parser = InputParser.new(exemption_service)
+parser = InputParser.new
 
 basic_tax_calculator = BasicSalesTaxCalculator.new
 import_duty_calculator = ImportDutyCalculator.new

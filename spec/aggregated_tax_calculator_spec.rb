@@ -11,7 +11,7 @@ RSpec.describe AggregatedTaxCalculator do
   let(:basic_tax_calculator) { BasicSalesTaxCalculator.new }
   let(:import_duty_calculator) { ImportDutyCalculator.new }
   let(:aggregated_calculator) { AggregatedTaxCalculator.new([basic_tax_calculator, import_duty_calculator]) }
-  let(:exemption_service) { ExemptionService.new(['book', 'chocolate', 'pill']) }
+  let(:exemption_service) { ExemptionService.new }
 
   it 'applies both taxes to imported non-exempt products' do
     product = Product.new(

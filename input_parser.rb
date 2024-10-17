@@ -1,14 +1,9 @@
 # frozen_string_literal: true
 
 class InputParser
-  attr_reader :exemption_service
-
-  def initialize(exemption_service = ExemptionService.new)
-    @exemption_service = exemption_service
-  end
-
   def parse(input)
     basket = Basket.new
+    exemption_service = ExemptionService.new
 
     input.each_line do |line|
       match_data = line.match(/(\d+) (.+) at (\d+\.\d{2})/)

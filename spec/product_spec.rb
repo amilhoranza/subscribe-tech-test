@@ -5,7 +5,7 @@ require_relative '../exemption_service'
 
 RSpec.describe Product do
   context 'when creating a product' do
-    let(:exemption_service) { ExemptionService.new(['book']) }
+    let(:exemption_service) { ExemptionService.new }
 
     it 'initializes with correct attributes' do
       product = Product.new(

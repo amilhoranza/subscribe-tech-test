@@ -6,7 +6,7 @@ require_relative '../exemption_service'
 
 RSpec.describe BasicSalesTaxCalculator do
   let(:basic_calculator) { BasicSalesTaxCalculator.new }
-  let(:exemption_service) { ExemptionService.new(['book', 'chocolate', 'pill']) }
+  let(:exemption_service) { ExemptionService.new }
 
   it 'applies tax to non-exempt products' do
     product = Product.new(name: 'music CD', price: 14.99, quantity: 1, exemption_service: exemption_service)

@@ -6,7 +6,7 @@ require_relative '../exemption_service'
 
 RSpec.describe ImportDutyCalculator do
   let(:import_duty_calculator) { ImportDutyCalculator.new }
-  let(:exemption_service) { ExemptionService.new(['book', 'chocolate', 'pill']) }
+  let(:exemption_service) { ExemptionService.new }
 
   it 'applies import duty to imported products' do
     product = Product.new(

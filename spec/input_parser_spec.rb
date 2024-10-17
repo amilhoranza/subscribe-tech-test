@@ -3,7 +3,6 @@
 require_relative '../input_parser'
 require_relative '../product'
 require_relative '../basket'
-require_relative '../exemption_service'
 
 RSpec.describe InputParser do
   let(:parser) { InputParser.new }
