@@ -27,7 +27,7 @@ The project follows **SOLID principles** and uses **composition** to handle mult
 
 ```bash
 git clone https://github.com/amilhoranza/subscribe-tech-test.git
-cd sales-tax-calculator
+cd subscribe-tech-test
 ```
 ## Install Dependencies
 
