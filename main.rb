@@ -9,18 +9,18 @@ require_relative 'basket'
 require_relative 'input_parser'
 require_relative 'exemption_service'
 
-input_1 = <<~INPUT
+input1 = <<~INPUT
   2 book at 12.49
   1 music CD at 14.99
   1 chocolate bar at 0.85
 INPUT
 
-input_2 = <<~INPUT
+input2 = <<~INPUT
   1 imported box of chocolates at 10.00
   1 imported bottle of perfume at 47.50
 INPUT
 
-input_3 = <<~INPUT
+input3 = <<~INPUT
   1 imported bottle of perfume at 27.99
   1 bottle of perfume at 18.99
   1 packet of headache pills at 9.75
@@ -33,7 +33,7 @@ basic_tax_calculator = BasicSalesTaxCalculator.new
 import_duty_calculator = ImportDutyCalculator.new
 aggregated_tax_calculator = AggregatedTaxCalculator.new([basic_tax_calculator, import_duty_calculator])
 
-inputs = [input_1, input_2, input_3]
+inputs = [input1, input2, input3]
 
 inputs.each do |input|
   basket = parser.parse(input)

@@ -2,6 +2,7 @@
 
 require_relative 'tax_calculator'
 
+# Calculator aggregation that receives different kind of calculartor
 class AggregatedTaxCalculator
   include TaxCalculator
 
