@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
+# Parses the text extracting the product value
 class InputParser
-  def parse(input)
+  def parse(input) # rubocop:disable Metrics/MethodLength
     basket = Basket.new
     exemption_service = ExemptionService.new
 

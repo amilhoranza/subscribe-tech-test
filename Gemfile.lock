@@ -5,6 +5,7 @@ GEM
     diff-lcs (1.5.1)
     json (2.7.5)
     language_server-protocol (3.17.0.3)
+    logger (1.6.1)
     mini_portile2 (2.8.7)
     nokogiri (1.16.7)
       mini_portile2 (~> 2.8.2)
@@ -15,8 +16,11 @@ GEM
     parser (3.3.5.1)
       ast (~> 2.4.1)
       racc
+    prism (1.2.0)
     racc (1.8.1)
     rainbow (3.1.1)
+    rbs (3.6.1)
+      logger
     regexp_parser (2.9.2)
     rspec (3.13.0)
       rspec-core (~> 3.13.0)
@@ -43,7 +47,13 @@ GEM
       unicode-display_width (>= 2.4.0, < 3.0)
     rubocop-ast (1.33.0)
       parser (>= 3.3.1.0)
+    ruby-lsp (0.21.2)
+      language_server-protocol (~> 3.17.0)
+      prism (>= 1.2, < 2.0)
+      rbs (>= 3, < 4)
+      sorbet-runtime (>= 0.5.10782)
     ruby-progressbar (1.13.0)
+    sorbet-runtime (0.5.11633)
     unicode-display_width (2.6.0)
 
 PLATFORMS
@@ -54,6 +64,7 @@ DEPENDENCIES
   nokogiri
   rspec
   rubocop
+  ruby-lsp
 
 RUBY VERSION
    ruby 3.3.5p100

@@ -2,6 +2,7 @@
 
 require_relative 'tax_calculator'
 
+# Tax applied to all imported products
 class ImportDutyCalculator
   include TaxCalculator
 
@@ -9,6 +10,7 @@ class ImportDutyCalculator
 
   def calculate(product)
     return 0 unless product.imported
+
     product.price * IMPORT_DUTY_RATE
   end
 end

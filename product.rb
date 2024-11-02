@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# It represents the product
 class Product
   attr_reader :name, :price, :quantity, :imported, :exempt, :exemption_service
 
